@@ -6,18 +6,9 @@
     <link rel="icon" href="robot icon.png" type="image/png"> <!-- Add your robot icon here -->
     <style>
 
-
-
-
-#start-container {
-            position: absolute;
-            top: 75vh;
-            left: 40vw;
-            z-index: 2;
-        }
         #start {
             padding: 10px 20px;
-            font-size: 18px;
+            font-size: 20px;
             cursor: pointer;
             background-color: #28a745;
             color: white;
@@ -38,7 +29,7 @@
             position: absolute;
             top: 10%;
             left: 40%;
-            font-size: 24px;
+            font-size: 26px;
             color: white;
             z-index: 2;
             font-family: 'Zen Dots', sans-serif;
@@ -72,7 +63,7 @@
             width: 100vw;
             height: 100vh;
             border: 0.1vw solid #000;
-            background-image: url('images/tunnels.jpg');
+            background-image: url('images/tunnels2.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -87,6 +78,7 @@
             text-align: center;
             line-height: 4vw;
             font-weight: bold;
+            font-size: 1.5vw;
             transition: background-color 0.3s ease;
         }
 
@@ -131,6 +123,58 @@
             color: transparent;  /* This hides the number 7 */
         }
 
+        #node2 {
+            background-image: url('Purple Gem.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 5vw; /* Adjust this value to change the width */
+            height: 5vw; /* Adjust this value to change the height */
+            color: transparent;  /* This hides the number 7 */
+        }
+
+        #node3 {
+            background-image: url('Pink Gem.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 5vw; /* Adjust this value to change the width */
+            height: 5vw; /* Adjust this value to change the height */
+            color: transparent;  /* This hides the number 7 */
+        }
+
+        #node4 {
+            background-image: url('Green Gem.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 5vw; /* Adjust this value to change the width */
+            height: 5vw; /* Adjust this value to change the height */
+            color: transparent;  /* This hides the number 7 */
+        }
+
+        #node5 {
+            background-image: url('Pink Gem.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 5vw; /* Adjust this value to change the width */
+            height: 5vw; /* Adjust this value to change the height */
+            color: transparent;  /* This hides the number 7 */
+        }
+
+        #node6 {
+            background-image: url(' Bright Blue Gem.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 5vw; /* Adjust this value to change the width */
+            height: 5vw; /* Adjust this value to change the height */
+            color: transparent;  /* This hides the number 7 */
+        }
+
+    
+
         .button-container {
             position: fixed;
             left: 2vw;
@@ -150,6 +194,8 @@
             background-color: #f0f0f0;
             cursor: pointer;
             font-weight: bold;
+            font-size: 1.1vw;
+            font-family: 'Zen Dots', sans-serif;
             transition: background-color 0.3s ease;
         }
 
@@ -203,8 +249,8 @@ transform: rotate(-30deg);
 height: 8vh; 
 width: 6vw;
 position: absolute;
-top: 50vh;
-left: 85vw;
+top: 20vh;
+left: 65vw;
 background-size: contain;
 background-position: center;
 background-repeat: no-repeat; /* Prevent tiling */
@@ -236,17 +282,43 @@ background-repeat: no-repeat; /* Prevent tiling */
 z-index: 1;
 }
 
-#bone {
-    height: 6vh; 
-width: 5vw;
+#dinosaur {
+    height: 27vh; 
+width: 20vw;
 position: absolute;
-top: 40vh;
-left: 7vw;
+top: 50vh;
+left: 80vw;
 background-size: contain;
 background-position: center;
 background-repeat: no-repeat; /* Prevent tiling */
 z-index: 1;
 }
+
+#treasure {
+    height: 20vh; 
+width: 13vw;
+position: absolute;
+top: 61vh;
+left: 86vw;
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat; /* Prevent tiling */
+z-index: 1;
+}
+
+
+#closedbox {
+    height: 17vh; 
+width: 10vw;
+position: absolute;
+top: 83vh;
+left: 87vw;
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat; /* Prevent tiling */
+z-index: 1;
+}
+
 
 
         .message-box {
@@ -264,8 +336,10 @@ z-index: 1;
         }
 
         #messageText {
+            font-family: 'Zen Dots', sans-serif;
             margin: 0;
             font-weight: bold;
+            font-size: 1.3vw;
             text-align: center;
             font-family: 'Zen Dots', sans-serif;
         }
@@ -280,22 +354,18 @@ z-index: 1;
 
         
      
-     
-        <!-- Start Button and Timer -->
-        <div id="start-container">
-            <button id="start">Start Game</button>
-        </div>
         <div id="timer">Time: 2:00</div>
         <div id="message"></div>
 
 
        <!--  <img id="background" src="tunnels.jpg"> -->
-        <img id="robotskeleton" src="images/robotskeleton.png">
+       <!-- <img id="robotskeleton" src="images/robotskeleton.png"> -->
        <!-- <img id="skeleton" src="skeleton2.png"> -->
-        <img id="fish" src="images/fishskeleton.png">
-        <img id="fishflip" src="images/fishflip.png">
-        <img id="bone" src="images/bone.png">
-        <img id="bone" src="bone.png">
+       <!-- <img id="fish" src="images/fishskeleton.png"> --> 
+      <!-- <img id="fishflip" src="images/fishflip.png"> --> 
+       <!--  <img id="bone" src="images/bone.png"> -->
+        <!-- <img id="dinosaur" src="images/dinosaur-fossil.png"> -->
+         <img id="treasure" src="images/treasure.png"> 
 
 
         <!-- Tree Nodes -->
@@ -304,7 +374,7 @@ z-index: 1;
         <div class="node" id="node3" style="left: 61vw; top: 40vh;">3</div>
         <div class="node" id="node4" style="left: 10vw; top: 75vh;">4</div>
         <div class="node" id="node5" style="left: 30vw; top: 75vh;">5</div>
-        <div class="node" id="node6" style="left: 52vw; top: 75vh;">6</div>
+        <div class="node" id="node6" style="left: 48vw; top: 75vh;">6</div>
         <div class="node" id="node7" style="left: 72vw; top: 75vh;">7</div>
         <div id="dot"></div>
     </div>
@@ -326,6 +396,69 @@ z-index: 1;
     </div>
 
     <script>
+
+// Timer setup
+
+        let timer = 120; // 2 minutes in seconds
+        let timerInterval;
+        let gameOver = false;
+
+        // Initialize Timer Function
+        function startTimer() {
+            timerInterval = setInterval(function() {
+                if (timer > 0) {
+                    timer--;
+                    let minutes = Math.floor(timer / 60);
+                    let seconds = timer % 60;
+                    document.getElementById("timer").textContent = `Time: ${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+                } else {
+                    clearInterval(timerInterval);
+                    if (!gameOver) {
+                        gameOverMessage();
+                    }
+                }
+            }, 1000);
+        }
+
+        // Start the timer only when "Next" is clicked for the first time
+        let timerStarted = false;
+        function nextStep() {
+            if (!timerStarted) {
+                startTimer();
+                timerStarted = true;
+            }
+            // Simulate BFS traversal logic here...
+            moveRabbit();
+        }
+
+        function moveRabbit() {
+            // Simulate the rabbit's movement across the nodes. You can modify this part based on your BFS traversal logic.
+            let currentStep = traversalSteps[currentStepIndex];
+            let targetNode = document.getElementById(`node${currentStep.id}`);
+            // Check if rabbit reaches node7
+            if (currentStep.id === 7) {
+                clearInterval(timerInterval); // Stop the timer when rabbit reaches node 7
+                showMessage("You Win!");
+            }
+            // Update rabbit position logic here
+            currentStepIndex++;
+        }
+
+        function showMessage(message) {
+            document.getElementById("messageText").textContent = message;
+            document.getElementById("messageBox").style.display = "block";
+        }
+
+        function gameOverMessage() {
+            showMessage("Game Over! Time's up!");
+            gameOver = true;
+        }
+
+
+
+
+
+
         // Node Definitions with Parent References
         const node1 = {
             id: 1,
@@ -503,7 +636,7 @@ z-index: 1;
         dot.style.top = `${node1.y - 2.5}vh`;  // Adjusted for centering
         dot.style.transform = `rotate(${currentRotation}deg)`;
 
-        showMessage("Welcome! Click 'Next' to start the traversal.");
+        showMessage("Welcome! Click 'Next' to start the digging.");
     };
 
     // Move the Dot to a Specific Node with Smooth Animation
